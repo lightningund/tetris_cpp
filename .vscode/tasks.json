@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe build active file",
+			"command": "C:/MSYS64/mingw64/bin/g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"lib.cpp",
+				"main.cpp",
+				"-o",
+				"tetris.exe",
+				"-D SFML_STATIC -I \"../#LIBS/GCC/x64/include/\" -L \"../#LIBS/GCC/x64/lib/\" -l sfml-graphics-s -l sfml-window-s -l sfml-system-s -l opengl32 -l winmm -l gdi32"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:/msys64/mingw64/bin/g++.exe"
+		},
+	]
+}
